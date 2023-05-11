@@ -1,5 +1,3 @@
-# esm
-Code and file for esm calculation
 # Mars ESM Analysis Tool
 
 This Python tool allows you to analyze and compare different scenarios in Mars ESM (Equivalent System Mass) based on the data you provide in an Excel file.
