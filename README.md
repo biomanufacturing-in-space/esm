@@ -12,7 +12,7 @@ This Python tool allows you to analyze and compare different scenarios in Mars E
     Name           Mass    Volume    Power    Cooling    Crewtime    Duration    Water    Resource    Medicine    Nutrients    Material    Tag
     Vessel         100     100       100      100        100         100         100      100         100         0            0           bioreactor
     Plastic polymer100     10        0        0          0           100         0        0           0           0            0           shipping
-    Pump           10      1         100      100        100         100         0        0           0           0            0   bioreactor
+    Pump           10      1         100      100        100         100         0        0           0           0            0           bioreactor
     ```
 
     Save the file as `ESM_book.xlsx`.
