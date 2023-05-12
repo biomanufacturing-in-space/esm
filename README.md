@@ -6,32 +6,31 @@ This Python tool allows you to analyze and compare different scenarios in Mars E
 
 The Mars ESM (Equivalent System Mass) is calculated using the following equation:
 
-<p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=ESM_{Mars} = \frac{Mass + Volume \cdot V_{eq} + Power \cdot P_{eq} + Cooling \cdot C_{eq} + Crewtime \cdot duration \cdot CT_{eq} + Water \cdot duration \cdot W_{eq}}{Resource \cdot duration \cdot R_{eq} + Medicine \cdot duration \cdot Med_{eq} + Nutrients \cdot duration \cdot Nut_{eq} + Material \cdot duration \cdot Mat_{eq} + 1}">
-</p>
+\begin{center}
+$ESM_{Mars} = \frac{Mass + Volume \cdot V_{eq} + Power \cdot P_{eq} + Cooling \cdot C_{eq} + Crewtime \cdot duration \cdot CT_{eq} + Water \cdot duration \cdot W_{eq}}{Resource \cdot duration \cdot R_{eq} + Medicine \cdot duration \cdot M_{eq} + Nutrients \cdot duration \cdot N_{eq} + Material \cdot duration \cdot M_{eq} + 1}$\
+\end{center}
+\\
+- $Mass$: Mass of the system (in kg)\\
+- $Volume$: Volume of the system (in cubic meters)\\
+- $V_{eq}$: Conversion factor for Volume (in kg/m$^3$)\\
+- $Power$: Power requirement of the system (in kW$_{electrical})$\\
+- $P_{eq}$: Conversion factor for Power (in kg/kW$_{electrical})$\\
+- $Cooling$: Cooling requirement of the system (in kW$_{thermal})$\\
+- $C_{eq}$: Conversion factor for Cooling (in kg/kW$_{thermal})$\\
+- $Crewtime$: Crewtime requirement of the system (in hours/day)\\
+- $CT_{eq}$: Conversion factor for Crewtime (in kg/hour)\\
+- $Water$: Water requirement of the system (in liters/day)\\
+- $W_{eq}$: Conversion factor for Water (in kg/liter)\\
+- $Resource$: Resource production of the system (in kg/day)\\
+- $R_{eq}$: Conversion factor for Resource (in kg/kg)\\
+- $Medicine$: Medicine production of the system (in kg/day)\\
+- $Med_{eq}$: Conversion factor for Medicine (in kg/kg)\\
+- $Nutrients$: Nutrient production of the system (in kg/day)\\
+- $Nut_{eq}$: Conversion factor for Nutrients (in kg/kg)\\
+- $Material$: Material production of the system (in kg/day)\\
+- $Mat_{eq}$: Conversion factor for Material (in kg/kg)\\
+- $Duration$: Duration of operation (in days)\\
 
-Where:
-
-- **Mass**: Mass of the system (in kg)
-- **Volume**: Volume of the system (in cubic meters)
-- **V<sub>eq</sub>**: Conversion factor for Volume (in kg/m³)
-- **Power**: Power requirement of the system (in kW<sub>electrical</sub>)
-- **P<sub>eq</sub>**: Conversion factor for Power (in kg/kW<sub>electrical</sub>)
-- **Cooling**: Cooling requirement of the system (in kW<sub>thermal</sub>)
-- **C<sub>eq</sub>**: Conversion factor for Cooling (in kg/kW<sub>thermal</sub>)
-- **Crewtime**: Crewtime requirement of the system (in hours/day)
-- **CT<sub>eq</sub>**: Conversion factor for Crewtime (in kg/hour)
-- **Water**: Water requirement of the system (in liters/day)
-- **W<sub>eq</sub>**: Conversion factor for Water (in kg/liter)
-- **Resource**: Resource production of the system (in kg/day)
-- **R<sub>eq</sub>**: Conversion factor for Resource (in kg/kg)
-- **Medicine**: Medicine production of the system (in kg/day)
-- **Med<sub>eq</sub>**: Conversion factor for Medicine (in kg/kg)
-- **Nutrients**: Nutrient production of the system (in kg/day)
-- **Nut<sub>eq</sub>**: Conversion factor for Nutrients (in kg/kg)
-- **Material**: Material production of the system (in kg/day)
-- **Mat<sub>eq</sub>**: Conversion factor for Material (in kg/kg)
-- **Duration**: Duration of operation (in days)
 
 
 ## Getting Started
