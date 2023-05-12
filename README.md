@@ -7,7 +7,7 @@ This Python tool allows you to analyze and compare different scenarios in Mars E
 The Mars ESM (Equivalent System Mass) is calculated using the following equation:
 
 
-ESM_{Mars} = \frac{Mass + Volume \cdot V_{eq} + Power \cdot P_{eq} + Cooling \cdot C_{eq} + Crewtime \cdot duration \cdot CT_{eq} + Water \cdot duration \cdot W_{eq}}{Resource \cdot duration \cdot R_{eq} + Medicine \cdot duration \cdot M_{eq} + Nutrients \cdot duration \cdot N_{eq} + Material \cdot duration \cdot M_{eq} + 1}
+$ESM_{Mars}$ = \frac{Mass + Volume \cdot V_{eq} + Power \cdot P_{eq} + Cooling \cdot C_{eq} + Crewtime \cdot duration \cdot CT_{eq} + Water \cdot duration \cdot W_{eq}}{Resource \cdot duration \cdot R_{eq} + Medicine \cdot duration \cdot M_{eq} + Nutrients \cdot duration \cdot N_{eq} + Material \cdot duration \cdot M_{eq} + 1}
 
 - $Mass$: Mass of the system (in kg)\\
 - $Volume$: Volume of the system (in cubic meters)\\
