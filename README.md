@@ -9,11 +9,11 @@ The Mars ESM (Equivalent System Mass) is calculated using the following equation
 
 $ESM_{Mars} = \frac{Mass + Volume \cdot V_{eq} + Power \cdot P_{eq} + Cooling \cdot C_{eq} + Crewtime \cdot duration \cdot CT_{eq} + Water \cdot duration \cdot W_{eq}}{Resource \cdot duration \cdot R_{eq} + Medicine \cdot duration \cdot M_{eq} + Nutrients \cdot duration \cdot N_{eq} + Material \cdot duration \cdot M_{eq} + 1}$
 
-- $Mass$: Mass of the system (in kg)\\
-- $Volume$: Volume of the system (in cubic meters)\\
+- $Mass$: Mass of the system (in kg)\
+- $Volume$: Volume of the system (in cubic meters)\
 - $V_{eq}$: Conversion factor for Volume (in $kg/m^3$)\\
 - $Power$: Power requirement of the system (in $kW_{electrical}$)\\
-- $P_{eq}$: Conversion factor for Power (in kg/$kW_{electrical})$\\
+- $P_{eq}$: Conversion factor for Power (in $kg/kW_{electrical})$\\
 - $Cooling$: Cooling requirement of the system (in $kW_{thermal})$\\
 - $C_{eq}$: Conversion factor for Cooling (in kg/$kW_{thermal})$\\
 - $Crewtime$: Crewtime requirement of the system (in hours/day)\\
