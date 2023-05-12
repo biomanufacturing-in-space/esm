@@ -12,7 +12,7 @@ $ESM_{Mars} = \frac{Mass + Volume \cdot V_{eq} + Power \cdot P_{eq} + Cooling \c
 - $Mass$: Mass of the system (in kg)\\
 - $Volume$: Volume of the system (in cubic meters)\\
 - $V_{eq}$: Conversion factor for Volume (in kg/m$^3$)\\
-- $Power$: Power requirement of the system (in kW$_{electrical})$\\
+- $Power$: Power requirement of the system (in $kW_{electrical}$)\\
 - $P_{eq}$: Conversion factor for Power (in kg/kW$_{electrical})$\\
 - $Cooling$: Cooling requirement of the system (in kW$_{thermal})$\\
 - $C_{eq}$: Conversion factor for Cooling (in kg/kW$_{thermal})$\\
