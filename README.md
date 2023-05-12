@@ -2,6 +2,38 @@
 
 This Python tool allows you to analyze and compare different scenarios in Mars ESM (Equivalent System Mass) based on the data you provide in an Excel file.
 
+# Mars ESM Equation
+
+The Mars ESM (Equivalent System Mass) is calculated using the following equation:
+
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=ESM_{Mars} = \frac{Mass + Volume \cdot V_{eq} + Power \cdot P_{eq} + Cooling \cdot C_{eq} + Crewtime \cdot duration \cdot CT_{eq} + Water \cdot duration \cdot W_{eq}}{Resource \cdot duration \cdot R_{eq} + Medicine \cdot duration \cdot Med_{eq} + Nutrients \cdot duration \cdot Nut_{eq} + Material \cdot duration \cdot Mat_{eq} + 1}">
+</p>
+
+Where:
+
+- **Mass**: Mass of the system (in kg)
+- **Volume**: Volume of the system (in cubic meters)
+- **V<sub>eq</sub>**: Conversion factor for Volume (in kg/m³)
+- **Power**: Power requirement of the system (in kW<sub>electrical</sub>)
+- **P<sub>eq</sub>**: Conversion factor for Power (in kg/kW<sub>electrical</sub>)
+- **Cooling**: Cooling requirement of the system (in kW<sub>thermal</sub>)
+- **C<sub>eq</sub>**: Conversion factor for Cooling (in kg/kW<sub>thermal</sub>)
+- **Crewtime**: Crewtime requirement of the system (in hours/day)
+- **CT<sub>eq</sub>**: Conversion factor for Crewtime (in kg/hour)
+- **Water**: Water requirement of the system (in liters/day)
+- **W<sub>eq</sub>**: Conversion factor for Water (in kg/liter)
+- **Resource**: Resource production of the system (in kg/day)
+- **R<sub>eq</sub>**: Conversion factor for Resource (in kg/kg)
+- **Medicine**: Medicine production of the system (in kg/day)
+- **Med<sub>eq</sub>**: Conversion factor for Medicine (in kg/kg)
+- **Nutrients**: Nutrient production of the system (in kg/day)
+- **Nut<sub>eq</sub>**: Conversion factor for Nutrients (in kg/kg)
+- **Material**: Material production of the system (in kg/day)
+- **Mat<sub>eq</sub>**: Conversion factor for Material (in kg/kg)
+- **Duration**: Duration of operation (in days)
+
+
 ## Getting Started
 
 1. **Update your Excel file:** The tool requires an Excel sheet with specific columns, including `Name`, `Mass`, `Volume`, `Power`, `Cooling`, `Crewtime`, `Duration`, `Water`, `Resource`, `Medicine`, `Nutrients`, `Material`, and `Tag`. Each row in the Excel sheet should represent a component of a system with its attributes. Here's an example of the expected data format:
